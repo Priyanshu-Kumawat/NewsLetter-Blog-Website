@@ -1,0 +1,49 @@
+<%- include("partials/header") -%>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../public/bootstrap-5.0.2-dist/css/bootstrap.css">
+
+    <div class="row gx-0">
+
+        <div class="col-8 gx-0 ">
+
+            <div class="c1">
+                <h1>Home</h1>
+
+                <p style="margin-top: 2rem; ">
+                    <%=homeText%>
+                </p>
+
+
+
+
+                <% for(var i=0; i<posts.length; i++){ %>
+
+                    <h1 style="margin-top: 6rem; ">
+                        <%=posts[i].title%>
+                    </h1>
+
+                    <img style="margin-top: 2rem;"
+                        src="https://static.toiimg.com/thumb/msid-93295155,imgsize-24586,width-400,resizemode-4/93295155.jpg"
+                        alt="">
+
+                    <p style="margin-top: 2rem; ">
+                        <%=posts[i].content%>
+                    </p>
+
+                    <% } %>
+            </div>
+        </div>
+
+
+        <div class="col-4 gx-0">
+            <div class="c2">
+                helhe
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <%- include("partials/footer") -%>

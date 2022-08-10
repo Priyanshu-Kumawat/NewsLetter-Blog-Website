@@ -1,0 +1,46 @@
+<%- include("partials/header") -%>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../public/bootstrap-5.0.2-dist/css/bootstrap.css">
+
+
+    <div class="row gx-0 compose">
+        <h1>Compose</h1>
+
+        <div class="container gx-0 form">
+            <form action="/compose" method="post">
+
+                <div class="row gx-0">
+                    <h6>Title</h6>
+                    <input type="text" autocomplete="off" name="postTitle">
+                </div>
+
+                <div class="row gx-0">
+                    <h6>Image</h6>
+                    <input type="text" autocomplete="off" name="postImageLink">
+                </div>
+
+                <div class="row gx-0 r2">
+                    <h6>post</h6>
+                    <textarea name="postContent">
+
+                    </textarea>
+                </div>
+
+
+                <div class="row gx-0 r3">
+                    <button type="submit" class="btn btn-primary">Publish</button>
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <%- include("partials/footer") -%>
