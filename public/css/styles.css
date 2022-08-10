@@ -1,242 +1,322 @@
 /* NavBar */
 
 h3 {
-    margin: 0px;
+  margin: 0px;
 }
 
 .left {
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .top-nav {
-    top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #15171a;
-    color: #FFF;
-    height: 50px;
-    padding: 2.5rem;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #15171a;
+  color: #fff;
+  height: 50px;
+  padding: 2.5rem;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li a {
-    color: rgb(245, 243, 243);
-    text-decoration: none;
+  color: rgb(245, 243, 243);
+  text-decoration: none;
 }
 
 .menu li a i {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .menu li a:hover {
-    color: #1abc9c !important;
+  color: #1abc9c !important;
 }
 
-.menu>li {
-    margin: 0 2rem;
-    overflow: hidden;
+.menu > li {
+  margin: 0 2rem;
+  overflow: hidden;
 }
 
 .menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu-toggle {
-    display: none;
+  display: none;
 }
 
 .menu-button,
 .menu-button::before,
 .menu-button::after {
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
 }
 
 .menu-button::before {
-    content: '';
-    margin-top: -8px;
+  content: "";
+  margin-top: -8px;
 }
 
 .menu-button::after {
-    content: '';
-    margin-top: 8px;
+  content: "";
+  margin-top: 8px;
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
 }
 
 @media (max-width: 768px) {
-    .menu-button-container {
-        display: flex;
-    }
+  .menu-button-container {
+    display: flex;
+  }
 
-    .menu {
-        position: absolute;
-        top: 0;
-        margin-top: 80px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #menu-toggle~.menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
 
-    #menu-toggle:checked~.menu li {
-        height: 4.5em;
-        padding: 1.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+  #menu-toggle:checked ~ .menu li {
+    height: 4.5em;
+    padding: 1.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
 
-    .menu>li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: white;
-        background-color: #171a1d;
-    }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #171a1d;
+  }
 
-    .menu>li:not(:last-child) {
-        border-bottom: 1px solid #444;
-    }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
 
-    .menu li a i {
-        display: none;
-    }
+  .menu li a i {
+    display: none;
+  }
 
-
-
-    .menu li {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-
+  .menu li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 /* Container */
 
-
-
 .main {
-
-
-    /* border-radius: 15px; */
-    color: #15171a;
-    width: 100%;
+  /* border-radius: 15px; */
+  color: #15171a;
+  width: 100%;
 }
 
 .c1,
 .c2 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .c1 {
-    display: flex;
-    flex-direction: column;
-    padding: 2% 16%;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 16%;
 }
 
 .c2 {
-    padding: 2% 4%;
+  padding: 2% 4%;
 }
 
 .compose {
-    padding: 5% 20% 0%;
+  padding: 5% 20% 0%;
 }
 
 .form {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 form {
-    margin-top: 50px;
-    width: 100%;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .r2 {
-    margin-top: 8px;
-    width: 100%;
+  margin-top: 8px;
+  width: 100%;
 }
 
 .r2 textarea {
-    padding-left: 10px;
-    padding-right: 10px;
-    min-height: 15rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 15rem;
 }
 
 .r3 {
-    margin-top: 20px;
-    display: flex;
-    width: fit-content;
+  margin-top: 20px;
+  display: flex;
+  width: fit-content;
 }
 
 .r3 button {
-    padding: 6px 18px;
-    border-radius: 6px;
+  padding: 6px 18px;
+  border-radius: 6px;
 }
 
 /* .footer-padding {
     padding-bottom: 60px;
 } */
 
-
 .footer {
-
-    z-index: 1px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #1abc9c;
+  z-index: 1px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1abc9c;
 }
 
 .footer p {
-    margin-top: 25px;
-    font-size: 12px;
-    color: #fff;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* ABOUt US CONTENT
+  -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.aboutus .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.aboutus h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.aboutus .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+/* rtl:end:ignore */
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }

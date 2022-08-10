@@ -1,10 +1,268 @@
 <%- include("partials/header") -%>
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="0"
+        class="active"
+        aria-label="Slide 1"
+        aria-current="true"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+        class=""
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+        class=""
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg
+          class="bd-placeholder-img"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <rect width="100%" height="100%" fill="orange"></rect>
+        </svg>
 
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>About US</h1>
+            <p>
+              Stay up to date! Our free newsletter will provide you with all
+              information about our current exhibitions, program
+              recommendations, openings and other special events at Haus der
+              Kunst..
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg
+          class="bd-placeholder-img"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <rect width="100%" height="100%" fill="red"></rect>
+        </svg>
 
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>The work of Art</h1>
+            <p>
+              Promote the work of Art! With your commitment you can promote the
+              current projects of House of Art and thus make a direct
+              contribution to the cultural life
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg
+          class="bd-placeholder-img"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <rect width="100%" height="100%" fill="green"></rect>
+        </svg>
 
-<h1>About</h1>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Support the News.</h1>
+            <p>
+              You can support Art in several ways, both as an individual and as
+              a company. For any inquiry, please contact us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-<p><%=aboutText%></p>
+  <div class="container aboutus">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg
+          class="bd-placeholder-img rounded-circle"
+          width="140"
+          height="140"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Placeholder: 140x140"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777"></rect>
+          <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+        </svg>
 
+        <h2>Mission</h2>
+        <p>
+          Empower everyone to understand the world through access to high
+          quality news from a variety of perspectives
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg
+          class="bd-placeholder-img rounded-circle"
+          width="140"
+          height="140"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Placeholder: 140x140"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777"></rect>
+          <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+        </svg>
 
-<%- include("partials/footer") -%> 
+        <h2>History</h2>
+        <p>
+          House of Arts is a non-collecting public museum and a key global
+          center for contemporary art.
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg
+          class="bd-placeholder-img rounded-circle"
+          width="140"
+          height="140"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Placeholder: 140x140"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#777"></rect>
+          <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+        </svg>
+
+        <h2>Press</h2>
+        <p>
+          News-Press NOW is the most comprehensive and in-depth news source
+          covering almost all the area of South.
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Mission News.
+          <span class="text-muted">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">Our mission is to provide you all the latest news.</p>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="https://www.seekpng.com/png/full/917-9179948_our-mission-company-vision.png"
+        />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">
+          Oh yeah, it’s that good.
+          <span class="text-muted">See for yourself.</span>
+        </h2>
+        <p class="lead">
+          Another featurette? Of course. More placeholder content here to give
+          you an idea of how this layout would work with some actual real-world
+          content in place.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img
+          src="https://images.pexels.com/photos/1187005/pexels-photo-1187005.jpeg"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          And lastly, this one. <span class="text-muted">Checkmate.</span>
+        </h2>
+        <p class="lead">
+          And yes, this is the last block of representative placeholder content.
+          Again, not really intended to be actually read, simply here to give
+          you a better view of what this would look like with some actual
+          content. Your content.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="https://www.thehomelike.com/wp-content/uploads/2019/12/Kx5wzxIOEy-1024x683.jpg"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- /END THE FEATURETTES -->
+  </div>
+</main>
+<%- include("partials/footer") -%>
