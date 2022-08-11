@@ -1,0 +1,205 @@
+body{
+    background-color: rgb(19, 17, 17);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.loginbox{
+    background: rgb(19, 17, 17);
+    width: 400px;
+    padding: 40px;
+    overflow: hidden;
+    margin-left: 500px;
+    margin-top: 200px;
+    box-shadow: 0px 0px 80px -7px rgb(247, 247, 247);;
+    border-radius: 10px;
+
+   
+}
+
+.loginbox h2
+{
+
+    
+    text-shadow: 5px 5px 2px rgb(24, 18, 18);
+    text-align:center;
+    text-transform: capitalize;
+    background-color: gray;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.loginbox input{
+        width: 89%;
+        display: block;
+        padding: 20px;
+        margin-bottom: 20px;
+        outline: none;
+        border: rgb(24, 18, 18);
+        font-size: 16px;
+        border-radius: 15px 50px 30px 5px;
+        text-align: center;
+}
+
+
+
+
+
+.loginbtn{
+    color: rgb(247, 247, 247);
+    width: 100%;
+    margin:auto;
+    border-radius: 50px 30px 50px 30px;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-shadow: 3px 0px 2px gray;
+    box-shadow: 0px 0px 80px -7px rgb(212, 203, 203);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+
+    background: linear-gradient(#44609c39,#3e6e4f);
+}
+
+.loginbtn:hover{
+    background: linear-gradient(#3e6ef4, #44609c39);
+}
+
+
+.registerlink{
+    margin-left: 100px;
+}
+
+
+.registerlink span{
+
+    color:white;
+    font-size: 20px;
+
+}
+
+
+.registerlink a {
+    text-decoration: none;
+    color:goldenrod;
+    font-size: 15px;
+}
+
+.registerbox
+{
+    background: rgb(19, 17, 17);
+    width: 400px;
+    padding:hidden;
+    overflow: hidden;
+    margin-left:500px;
+    margin-top: 200px;
+    box-shadow: 0px 0px 80px -7px rgb(247, 247, 247);
+    border-radius: 5%;
+
+}
+
+
+.registerbox h2{
+    text-shadow: 5px 1px 2px rgb(247, 247, 247);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+.registerbox input
+{
+    width: 89%;
+    display: block;
+    padding: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px 3px 50px 15px;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+.registerbtn{
+    color: rgb(247, 247, 247);
+    width: 100%;
+    margin:auto;
+    border-radius: 50px 30px 50px 30px;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-shadow: 3px 0px 2px gray;
+    box-shadow: 0px 0px 80px -7px rgb(212, 203, 203);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+
+    background: linear-gradient(#44609c39,#3e6e4f);
+
+}
+
+.registerbtn:hover{
+
+
+    background: linear-gradient(#433e6e,#44609c39);
+}
+
+.loginlink
+{
+
+    margin-left: 30px;
+
+}
+
+.loginlink span{
+    color: white;
+    font-size: 20px;
+}
+
+
+.loginlink a{
+
+    text-decoration: none;
+    color: rgb(72, 194, 55);
+    font-size: 15px;
+
+}
+
+
+b{
+    color: white;
+    font-size: 15px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

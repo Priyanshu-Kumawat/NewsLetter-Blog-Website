@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="price-toggler">
+        <span class="month active" >monthly</span>
+        <span class="year">yearly</span>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Unlimited Digital Access </h3>
+            <div class="price month">  <img class="images images-contain" src="./th.jfif"></img> <h4> <b>nbafhbbfah</b></h4></div>
+            <div class="price year"><img class="images images-contain" src="./th (1).jfif"></img></div>
+            <div class="list">
+               
+            </div>
+            <a href="#" class="btn">GET DIGITAL DELIVERY</a>
+        </div>
+
+        <div class="box">
+            <h3>Sunday Only Home Delivery + Unlimited Digital access</h3>
+            <div class="price month"> <img class="images images-contain" src="./th.jfif"></img></div>
+            <div class="price year"><img class="images images-contain" src="./th (1).jfif"></img></div>
+           
+            <a href="#" class="btn">GET SUNDAY DELIVERY</a>
+        </div>
+
+        <div class="box">
+            <h3>Everyday  Home Delivery + Unlimited Digital Access</h3>
+            <div class="price month"><img class="images images-contain" src="./th.jfif"></img></div>
+            <div class="price year"><img class="images images-contain" src="./th (1).jfif"></img></div>
+           
+            <a href="#" class="btn">GET 7 DAY DELIVERY </a>
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+    let month = document.querySelector('.price-toggler .month');
+    let year = document.querySelector('.price-toggler .year');
+    let monthAmount = document.querySelectorAll('.box-container .box .month');
+    let yearAmount = document.querySelectorAll('.box-container .box .year');
+    
+    year.onclick = () =>{
+        year.classList.add('active');
+        month.classList.remove('active');
+    
+        monthAmount.forEach(mo =>{ mo.style.display = 'none' });
+        yearAmount.forEach(yr =>{ yr.style.display = 'block' });
+    };
+    
+    month.onclick = () =>{
+        year.classList.remove('active');
+        month.classList.add('active');
+    
+        monthAmount.forEach(mo =>{ mo.style.display = 'block' });
+        yearAmount.forEach(yr =>{ yr.style.display = 'none' });
+    };
+    
+    </script>
+
+    
+</body>
+</html>
